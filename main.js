@@ -1,56 +1,44 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class StudentService {
-    students = [];
-    addStudent(student) {
-        this.students.push(student);
-    }
-    getStudentById(id) {
-        return this.students.find(student => student.id === id);
-    }
-    getAllStudents() {
-        return this.students;
-    }
+#!/usr/bin/env node
+const students = [];
+// Function to add a student
+function addStudent(student) {
+    students.push(student);
 }
-// Create an instance of StudentService
-const studentService = new StudentService();
-class StudentController {
-    studentService;
-    constructor(studentService) {
-        this.studentService = studentService;
-    }
-    addStudent(student) {
-        this.studentService.addStudent(student);
-    }
-    getAllStudents() {
-        return this.studentService.getAllStudents();
-    }
+// Function to get a student by ID
+function getStudentById(id) {
+    return students.find(student => student.id === id);
 }
-const generateId = () => {
+// Function to get all students
+function getAllStudents() {
+    return students;
+}
+// Utility function to generate a unique ID
+function generateId() {
     return Math.floor(Math.random() * 10000);
-};
-const studentController = new StudentController(studentService);
+}
 // Adding Multiple Students
 const student1 = {
     id: generateId(),
-    name: 'John Doe',
-    age: 20,
+    name: 'Ali',
+    age: 17,
     courses: ['Math', 'Science']
 };
 const student2 = {
     id: generateId(),
-    name: 'Jane Smith',
-    age: 22,
+    name: 'Adam',
+    age: 15,
     courses: ['English', 'History']
 };
 const student3 = {
     id: generateId(),
-    name: 'Alice Johnson',
-    age: 19,
-    courses: ['Physics', 'Chemistry']
+    name: 'Ahmed',
+    age: 16,
+    courses: ['Physics', 'Chemistry', 'Computer']
 };
-// Adding students using the controller
-studentController.addStudent(student1);
-studentController.addStudent(student2);
-studentController.addStudent(student3);
-console.log(studentController.getAllStudents());
+// Adding students
+addStudent(student1);
+addStudent(student2);
+addStudent(student3);
+// Display all students
+console.log(getAllStudents());
+export {};
