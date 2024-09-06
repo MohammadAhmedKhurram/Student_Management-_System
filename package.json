@@ -1,7 +1,7 @@
 {
   "name": "student-manager-ts",
-  "version": "1.1.7",
-  "description": "",
+  "version": "1.1.8",
+  "description": "A TypeScript-based command-line application built using Node.js, Inquirer, and Chalk. This tool allows users to manage students and courses with functionality to add, edit, delete, and view both students and courses. All data is stored persistently in JSON files for future retrieval, ensuring a smooth experience even after application restarts.",
   "main": "main.js",
   "type": "module",
   "bin": "main.js",
