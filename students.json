@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Ahmed",
+    "age": "16",
+    "id": "78531",
+    "courses": "Artificial Intelligence (AI) and Machine Learning (ML)"
+  },
+  {
+    "name": "Usman",
+    "age": "14",
+    "id": "93296",
+    "courses": "Cybersecurity"
+  },
+  {
+    "name": "Bilal",
+    "age": "15",
+    "id": "84885",
+    "courses": "Software Development"
+  },
+  {
+    "name": "Harry",
+    "age": "16",
+    "id": "94580",
+    "courses": "Artificial Intelligence (AI) and Machine Learning (ML)"
+  },
+  {
+    "name": "Henry",
+    "age": "15",
+    "id": "11123",
+    "courses": "Software Development"
+  }
+]
